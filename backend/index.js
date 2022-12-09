@@ -1,12 +1,8 @@
-import express, { json } from "express"
-import mysql from "mysql"
-import cors from "cors"
-
-
-
+import express, { json } from "express";
+import mysql from "mysql";
+import cors from "cors";
 
 const app = express();
-
 
 const db = mysql.createConnection({
     host:"localhost",
@@ -31,13 +27,13 @@ app.get("/books", (req,res)=>{
 });
 
 app.post("/books", (req,res)=>{
-    const q = "INSERT INTO books (`title`, `desc`, `price`, `cover`) VALUES (?)"
+    const q = "INSERT INTO books (`title`, `desc`, `price`, `cover`) VALUES (?)";
     const values = [
         req.body.title,
         req.body.desc, 
         req.body.price, 
         req.body.cover,
-    ]
+    ];
 
     db.query(q, [values], (err,data)=>{
         if(err) return res.json(err);
@@ -64,7 +60,7 @@ app.put("/books/:id", (req,res)=>{
         req.body.desc, 
         req.body.price, 
         req.body.cover,
-    ]
+    ];
 
     db.query(q,[...values, bookId], (err,data)=>{
         if(err) return res.json(err);
