@@ -9,4 +9,4 @@ Aplikasi bookApp adalah aplikasi sederhana yang mengimplementasikan Create, Read
 # Cara Running Aplikasi
 1. Import file sql ke MySql Workbench
 2. Untuk menjalankan sisi Backend, gunakan command npm start
-3. Untuk menjalankan sisi Frontend, gunakan command npm start di terminal yang berbeda dengan Backend 
+3. Untuk menjalankan sisi Frontend, gunakan command npm install lalu npm start di terminal yang berbeda dengan Backend 
