@@ -4,7 +4,7 @@ Aplikasi bookApp adalah aplikasi sederhana yang mengimplementasikan Create, Read
 # Environment
 1. Backend yang digunakan adalah Node Js
 2. Database yang digunakan adalah MySql
-3. Frontend yang digunakan adalah React Js
+3. Frontend yang digunakan adalah React Js (clone disini https://github.com/ErmanSahputra/bookApp-frontend.git)
 
 # Cara Running Aplikasi
 1. Import file sql ke MySql Workbench
